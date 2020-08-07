@@ -23,9 +23,10 @@ Debug template for competitive programming `mydebug.h`
 ``` cpp
 #include <bits/stdc++.h>
 
-// add these line
-// or copy mydebug.h content here
 #ifdef LOCAL
+// or copy mydebug.h content here
+// copy header file mydebug.h to your include location
+// linux: /usr/include
 #include <mydebug.h>
 #else
 #define debug(...)
@@ -37,7 +38,7 @@ int main() {
   vector<int> v = {4, 5, 1, 2};
   debug(v); // use cerr
 
-  // use normal cout
+  // normal cout
   cout << v << endl;
 
   // work for vector, map, set, array, deque... (has begin(), and end())
@@ -48,15 +49,16 @@ int main() {
   int arr[5] = {1,2,3,4,5};
   debug(arr);
 
-  // multi dimension array
+  // multi dimensional array
   int ar[3][3];
   debug(ar);
 
-  // multi demension vector
+  // multi demensional vector
   vector<vector<pair<int,bool>>> vvp = {
     {{1, false}, {2, true}},
     {{3, true}, {4, false}}
   };
+  debug(vvp);
 
   // tuple
   tuple<string,int,float> t{"a string", 0, 1.f};
