@@ -5,18 +5,20 @@ A place to save my codes, specialized for competitive programming.
 
 ## How to use debug template?
 Debug template for competitive programming `mydebug.h`
-Support: 
+
+### Support: 
   - Show variables names (or function, expression...) and their values
   - Print any stl container that has `begin()` and `end()`
   - Support line number
   - Pretty print with ascii-color on linux, (for window [enable virtual terminal processing](https://superuser.com/a/1300251))
 
-Usage:
+### Usage:
   - Replace `#include <mydebug.h>` with its content
   - Or copy file `mydebug.h` to `/usr/include/`
   - Remember to compile with option `-DLOCAL`
   - Works out of the box for `c++17`, if you use `c++14` you had to replace/remove `operator<<` for `tuple`
-Code:
+
+### Code:
 
 ``` cpp
 #include <bits/stdc++.h>
@@ -70,7 +72,7 @@ int main() {
 
 Comiple with: `g++ -std=c++17 template.cpp -o template -DLOCAL`
 
-Result
+### Result
 ![result](./media/code1.png)
 
 ## Want to compile faster?
