@@ -6,7 +6,7 @@ A place to save my codes, specialized for competitive programming.
 ## How to use debug template?
 Debug template for competitive programming `mydebug.h`
 
-### Support: 
+### Features: 
   - Show variables names (or function, expression...) and their values
   - Print any stl container that has `begin()` and `end()`
   - Support line number
