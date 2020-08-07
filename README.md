@@ -11,6 +11,11 @@ Support:
   - Support line number
   - Pretty print with ascii-color on linux, (for window [enable virtual terminal processing](https://superuser.com/a/1300251))
 
+Usage:
+  - Replace `#include <mydebug.h>` with its content
+  - Or copy file `mydebug.h` to `/usr/include/`
+  - Remember to compile with option `-DLOCAL`
+  - Works out of the box for `c++17`, if you use `c++14` you had to replace/remove `operator<<` for `tuple`
 Code:
 
 ``` cpp
@@ -64,6 +69,7 @@ int main() {
 ```
 
 Comiple with: `g++ -std=c++17 template.cpp -o template -DLOCAL`
+
 Result
 ![result](./media/code1.png)
 
