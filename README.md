@@ -24,9 +24,9 @@ Debug template for competitive programming `mydebug.h`
 #include <bits/stdc++.h>
 
 #ifdef LOCAL
-// or copy mydebug.h content here
 // copy header file mydebug.h to your include location
 // linux: /usr/include
+// or copy mydebug.h content here
 #include <mydebug.h>
 #else
 #define debug(...)
